@@ -1,8 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #8E8E8E;
-    color: #FFF;
-    max-width: 1280px;
-    margin: 50px auto;
-    padding: 20px;
-}
+body { font-family: Arial, sans-serif; background-color: #8E8E8E; color: #FFF; max-width: 1280px; margin: 50px auto; padding: 20px; }
+.site-header { display: flex; align-items: center; gap: 30px; padding: 14px 20px; background-color: #1a1a1a; border-radius: 8px; }
+.site-header nav ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
+.site-header a { color: #FFF; text-decoration: none; }
+.header-tools { margin-left: auto; display: flex; gap: 12px; align-items: center; }
+main section { background-color: #2b2b2b; border-radius: 8px; padding: 30px; margin-top: 24px; }
+h1 { font-size: 40px; }
+h2 { color: #FFF; }
+.btn { display: inline-block; background-color: #e11d2a; color: #FFF; text-decoration: none; padding: 12px 22px; border-radius: 6px; margin-top: 12px; }
+.banner { display: flex; gap: 30px; align-items: center; }
+.banner-text { flex: 1; }
+.banner img, #science img { max-width: 480px; width: 100%; border-radius: 8px; }
+#science { display: flex; gap: 30px; align-items: center; }
+.cards, .carousel { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+.card { flex: 1; min-width: 220px; background-color: #3a3a3a; border-radius: 8px; padding: 24px; }
+.card h3 { font-size: 32px; margin: 0 0 8px; }
+.logos { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+.logos img { height: 60px; background: #fff; border-radius: 6px; padding: 6px; }
+video, audio { margin-top: 16px; max-width: 100%; border-radius: 8px; }
+.site-footer { display: flex; align-items: center; gap: 30px; padding: 24px 20px; margin-top: 24px; background-color: #1a1a1a; border-radius: 8px; }
