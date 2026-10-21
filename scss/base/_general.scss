@@ -1,0 +1,121 @@
+body {
+    font-family: $font-stack;
+    color: $main-color;
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 0 $base-padding;
+}
+
+main section {
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 40px 0;
+    color: #fff;
+}
+
+h1 { font-size: 40px; }
+h2 { color: #fff; }
+
+.btn {
+    display: inline-block;
+    background-color: #e11d2a;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.banner {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    &-text { flex: 1; }
+    img { max-width: 480px; width: 100%; border-radius: 8px; }
+}
+
+#science {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    img { max-width: 480px; width: 100%; border-radius: 8px; }
+}
+
+.cards-wrapper,
+.news-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card,
+.news-card {
+    flex: 1;
+    min-width: 220px;
+    background-color: #3a3a3a;
+
+    h3 { font-size: 32px; margin: 0 0 8px; }
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    img { height: 60px; background: #fff; border-radius: 6px; padding: 6px; }
+}
+
+video,
+audio { margin-top: 16px; max-width: 100%; border-radius: 8px; }
+
+.tables {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    table { flex: 1; min-width: 340px; border-collapse: collapse; background-color: #3a3a3a; }
+    caption { text-align: left; font-weight: bold; padding: 8px 0; color: #fff; }
+    th,
+    td { border: 1px solid #555; padding: 10px 14px; text-align: left; }
+    thead th { background-color: #1a1a1a; }
+    td:last-child,
+    th:last-child { text-align: center; width: 110px; }
+}
+
+.apply-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 16px;
+    max-width: 640px;
+
+    label { margin-top: 14px; font-weight: bold; }
+    input,
+    textarea {
+        padding: 10px 12px;
+        border: 1px solid #555;
+        border-radius: 6px;
+        background-color: #f5f5f5;
+        color: #1a1a1a;
+        font-family: inherit;
+        font-size: 15px;
+    }
+    textarea { resize: vertical; }
+    button {
+        align-self: flex-start;
+        margin-top: 20px;
+        background-color: #e11d2a;
+        color: #fff;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}
