@@ -1,7 +1,7 @@
 body {
-    font-family: $font-stack;
-    color: $main-color;
-    max-width: 80em;
+    background: var(--primary-color);
+    color: var(--primary-text-color);
+    max-width: $widedesk;
     margin: 0 auto;
     padding: 0 $base-padding;
 }
@@ -11,20 +11,30 @@ main section {
     border-radius: 8px;
     padding: 30px;
     margin: 40px 0;
-    color: #fff;
 }
 
-h1 { font-size: 40px; }
-h2 { color: #fff; }
-
-.btn {
+// Кнопка-заклик (CTA): фон — акцентний червоний, при наведенні — hover-колір
+.button {
     display: inline-block;
-    background-color: #e11d2a;
-    color: #fff;
+    background: var(--red-color);
+    color: var(--primary-text-color);
+    width: fit-content;
+    padding: 7px 14px;
+    border-radius: 5px;
+    margin: 40px 0;
+    border: 1px solid var(--red-color);
     text-decoration: none;
-    padding: 12px 22px;
-    border-radius: 6px;
-    margin-top: 12px;
+
+    p { margin: 0; }
+
+    &:hover {
+        background: var(--red-hover-color);
+        border-color: var(--red-hover-color);
+    }
+
+    &:focus {
+        background: var(--primary-color);
+    }
 }
 
 .banner {
