@@ -11,29 +11,35 @@
 </head>
 <body>
     <header class="site-header">
-        <img src="images/logo.svg" alt="Логотип кафедри ІКТ" title="Кафедра ІКТ">
+        <img class="logo" src="images/logo.svg" alt="Логотип кафедри ІКТ" title="Кафедра ІКТ">
         <nav>
-            <ul>
-                <li><a href="#specialties">Спеціальності</a></li>
-                <li><a href="#science">Наука</a></li>
-                <li><a href="#news">Новини</a></li>
-                <li><a href="#contact">Контакти</a></li>
+            <ul class="main-menu">
+                <li><a class="menu-link" href="#specialties">Спеціальності</a></li>
+                <li><a class="menu-link" href="#science">Наука</a></li>
+                <li><a class="menu-link" href="#news">Новини</a></li>
+                <li><a class="menu-link" href="#contact">Контакти</a></li>
             </ul>
         </nav>
-        <div class="header-tools">
-            <a href="#" class="search" title="Пошук по сайту">&#128269;</a>
-            <a href="#" class="lang">UA</a>
-            <a href="#" class="lang">EN</a>
+        <a href="#" class="search" title="Пошук по сайту">&#128269;</a>
+        <div class="lang">
+            <ul class="lang-wrapper">
+                <li class="ua"><a href="#" class="is-active">UA</a></li>
+                <li class="en"><a href="#">EN</a></li>
+            </ul>
         </div>
     </header>
     <main>
-        <section class="banner">
-            <div class="banner-text">
+        <section id="banner">
+            <div class="content-wrapper">
                 <h1>Створюй майбутнє. Тут і зараз!</h1>
-                <p>Вибери не просто освіту - обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!</p>
+                <div class="description">
+                    <p>Вибери не просто освіту - обери шлях до свого технологічного майбутнього! Кафедра ІКТ ХАІ - це місце, де ідеї стають реальністю, а знання відкривають двері до кар’єри мрії. Почни свій шлях вже сьогодні!</p>
+                </div>
                 <a href="#specialties" class="button">Вибір поступлення</a>
             </div>
-            <img src="images/banner.jpg" alt="Банер сайту кафедри" title="Кафедра ІКТ ХАІ">
+            <div class="image-wrapper">
+                <img src="images/banner.jpg" alt="Банер сайту кафедри" title="Кафедра ІКТ ХАІ">
+            </div>
         </section>
         <section id="specialties">
             <h2>Наші спеціальності</h2>
