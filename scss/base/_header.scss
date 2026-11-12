@@ -1,0 +1,13 @@
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: $base-padding;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+
+    nav ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
+    a { color: #fff; text-decoration: none; }
+
+    .header-tools { margin-left: auto; display: flex; gap: 12px; align-items: center; }
+}
