@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout | Department of Information and Communication Technologies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Geologica:wght@100..900&display=swap">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="grid-page">
+        <header class="grid-header">
+            <h1>Header</h1>
+            <p>Кафедра інформаційно-комунікаційних технологій ім. О. О. Зеленського</p>
+        </header>
+
+        <nav class="grid-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="index.html#specialties">Спеціальності</a></li>
+                <li><a href="index.html#science">Наука</a></li>
+                <li><a href="index.html#news">Новини</a></li>
+                <li><a href="grid.html">Grid Layout</a></li>
+            </ul>
+        </nav>
+
+        <main class="grid-main">
+            <h1>Основна частина сторінки</h1>
+            <p>Це приклад контенту, розміщеного за допомогою CSS Grid.</p>
+
+            <div class="content-grid">
+                <article class="grid-article">
+                    <h2>Основна частина сторінки</h2>
+                    <p>Це приклад контенту, розміщеного за допомогою CSS Grid. Нижче наведено
+                       галерею зображень, оформлену сітковим макетом.</p>
+
+                    <h3>Галерея зображень</h3>
+                    <div class="gallery">
+                        <img src="images/gallery1.jpg" alt="Архітектура ПЗ">
+                        <img src="images/gallery2.jpg" alt="Лабораторія">
+                        <img src="images/gallery3.jpg" alt="Хакатон">
+                        <img src="images/gallery4.jpg" alt="Робототехніка">
+                        <img src="images/gallery5.jpg" alt="Мережі">
+                        <img src="images/gallery6.jpg" alt="Випускники">
+                    </div>
+                </article>
+
+                <aside class="grid-sidebar">
+                    <h3>Sidebar</h3>
+                    <ul>
+                        <li><a href="index.html#specialties">Спеціальності</a></li>
+                        <li><a href="index.html#news">Новини кафедри</a></li>
+                        <li><a href="index.html#contact">Контакти</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="grid-footer">
+            <p>© 2026 Кафедра ІКТ ХАІ. Сторінку оформлено за допомогою CSS Grid.</p>
+        </footer>
+    </div>
+</body>
+</html>
