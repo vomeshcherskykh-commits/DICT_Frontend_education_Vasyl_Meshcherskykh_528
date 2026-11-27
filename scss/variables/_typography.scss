@@ -1,0 +1,63 @@
+$base-padding: 20px;
+
+// ===== Mobile-first: базові стилі для мобільних пристроїв =====
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: $comfortaa;
+    color: var(--primary-text-color);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: 1.4;
+    font-weight: 700;
+    font-family: $geologica;
+}
+
+h1, .h1 { font-size: 28px; }
+h2, .h2 { font-size: 26px; }
+h3, .h3 { font-size: 24px; }
+h4, .h4 { font-size: 22px; }
+h5, .h5 { font-size: 20px; }
+h6, .h6 { font-size: 18px; }
+
+.p, p   { font-size: 14px; line-height: 1.4; margin: 12px 0; }
+.small, small { font-size: 12px; line-height: 1.4; }
+.scc_large-text, .large { font-size: 16px; line-height: 1.4; }
+
+a {
+    color: var(--red-color);
+    font-weight: 400;
+    text-decoration: underline;
+
+    &:active,
+    &:hover,
+    &:focus { text-decoration: none; }
+}
+
+strong { font-weight: 700; }
+em { font-style: italic; }
+
+// ===== Планшети (≥ 796px) =====
+@media (min-width: 796px) {
+    body { font-size: 16px; }
+    .p, p { font-size: 16px; }
+
+    h1, .h1 { font-size: 32px; }
+    h2, .h2 { font-size: 28px; }
+    h3, .h3 { font-size: 26px; }
+    h4, .h4 { font-size: 24px; }
+    h5, .h5 { font-size: 22px; }
+    h6, .h6 { font-size: 20px; }
+}
+
+// ===== Десктоп (≥ 1200px) =====
+@media (min-width: 1200px) {
+    h1, .h1 { font-size: 36px; }
+    h2, .h2 { font-size: 32px; }
+    h3, .h3 { font-size: 30px; }
+    h4, .h4 { font-size: 28px; }
+    h5, .h5 { font-size: 24px; }
+    h6, .h6 { font-size: 22px; }
+}
