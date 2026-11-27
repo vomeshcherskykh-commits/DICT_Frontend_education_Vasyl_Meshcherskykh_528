@@ -1,4 +1,4 @@
-// Верхній колонтитул — горизонтальне вирівнювання за допомогою Flexbox
+// Верхній колонтитул — адаптивний (mobile-first) з бургер-меню
 .site-header {
     display: flex;
     flex-direction: row;
@@ -6,6 +6,7 @@
     gap: 20px;
     align-items: center;
     padding: $base-padding 0;
+    position: relative;        // для випадного меню (.main-menu.show)
 }
 
 .logo {
@@ -14,12 +15,24 @@
 
 nav {
     width: calc(100% - 292px);
+    display: flex;
 
+    // кнопка бургер-меню (видима на мобільних і планшетах)
+    .burger-menu {
+        margin-left: auto;
+        width: fit-content;
+
+        .menu-toggle {
+            margin: 0;
+        }
+    }
+
+    // головне меню — за замовчуванням приховане (mobile-first)
     .main-menu {
         margin: 0;
         padding: 0;
         list-style: none;
-        display: flex;
+        display: none;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
@@ -32,12 +45,25 @@ nav {
             text-transform: uppercase;
             font-weight: bold;
         }
+
+        // відкрите меню (клас show) — випадний блок під шапкою
+        &.show {
+            display: flex;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 90%;
+            margin: 0;
+            padding: 20px;
+            background: #2b2b2b;
+            border-radius: 8px;
+            z-index: 20;
+        }
     }
 }
 
 .search {
     width: 24px;
-    margin-left: auto;
 }
 
 .lang {
@@ -77,14 +103,11 @@ nav {
                 font-weight: bold;
                 line-height: 24px;
 
-                &.is-active {
-                    color: $white;
-                }
+                &.is-active { color: $white; }
             }
 
             &.ua {
                 order: 1;
-
                 a {
                     &::after {
                         content: '';
@@ -98,16 +121,12 @@ nav {
                         top: 3px;
                         right: -31px;
                     }
-
-                    &.is-active::after {
-                        display: block;
-                    }
+                    &.is-active::after { display: block; }
                 }
             }
 
             &.en {
                 order: 3;
-
                 a {
                     &::before {
                         content: '';
@@ -121,12 +140,28 @@ nav {
                         top: 3px;
                         left: -31px;
                     }
-
-                    &.is-active::before {
-                        display: block;
-                    }
+                    &.is-active::before { display: block; }
                 }
             }
+        }
+    }
+}
+
+// ===== Десктоп (≥ 1200px): меню у колонтитулі, бургер прихований =====
+@media (min-width: 1200px) {
+    header nav {
+        justify-content: center;
+
+        .burger-menu {
+            display: none;
+        }
+
+        .main-menu {
+            display: flex;
+            position: static;
+            width: auto;
+            padding: 0;
+            background: none;
         }
     }
 }

@@ -154,3 +154,22 @@ audio { margin-top: 16px; max-width: 100%; border-radius: 8px; }
         cursor: pointer;
     }
 }
+
+// ===== Адаптивність банера: одноколонковий макет нижче десктопа =====
+@media (max-width: 1199px) {
+    #banner {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+
+        .content-wrapper { width: 100%; }
+
+        .image-wrapper {
+            position: static;
+            top: auto;
+            right: auto;
+
+            img { max-width: 100%; }
+        }
+    }
+}
